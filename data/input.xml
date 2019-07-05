@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ROOT>
+  <test>TEST String</test>
   <title>
     <name>名前</name>
     <data>日程１</data>
