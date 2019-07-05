@@ -19,3 +19,25 @@ function hiraganaToKatagana(src) {
     return String.fromCharCode(chr);
   });
 }
+//==================================================
+//  名前： loadXML
+//  概要： サーバー上のXMLを読み込む
+//  引数： path <i  > : XMLファイルのパス
+//  戻値： XMLオブジェクト
+//==================================================
+function loadXML(path){
+  var ret;
+  $.ajax({
+    url:path,
+    type:"get",
+    dataType:"xml",
+    timeout:1000,
+    cache:false,
+    async: false, //並列処理をOFFにする、読み込み完了まで待機
+  }).done(function(xml){
+    ret=xml;
+  }).fail(function(xml){
+    alert("データの読み込みに失敗しました");
+  });
+  return ret;
+}

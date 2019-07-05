@@ -1,0 +1,101 @@
+body{
+  font-size: 30px;
+  text-align: center;
+}
+
+#container{
+  //background-color: lightgray;
+  border: 1px sold lightgray;
+  width: 100%;
+  display:flex;
+  flex-direction:  column;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+#headbox{
+  //background-color: pink;
+  height:130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#button{
+  background: linear-gradient(#8bf,#bcf);
+  height:100px;
+  width:600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px gray;
+}
+#label{
+  font-size: 40px;
+  margin:10px;
+}
+
+#tablebox{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+}
+.row{
+  //background-color: blue;
+  width:98%;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+}
+
+#title > .cell{
+  font-size:25px;
+  background-color: #ccf;
+  box-shadow: 0px -4px 8px 8px #bbe inset;
+}
+#results{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  width:100%;
+}
+.result{
+  border: 1px solid red;
+  background-color: yellow;
+  width:98%;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+}
+.cell{
+  border: 1px solid black;
+  width: 15%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -4px 8px 8px #eee inset;
+}
+.cell:first-child{
+  //background-color: pink;
+  flex-grow: 1;
+  border: 1px solid black;
+}
+
+
+#title .cell:first-child{
+  border-radius: 10px 0 0 0;
+}
+#title .cell:last-child{
+  border-radius: 0 10px 0 0;
+}
+#results .row:last-child .cell:first-child{
+  border-radius: 0 0 0 10px;
+}
+#results .row:last-child .cell:last-child{
+  border-radius: 0 0 10px 0;
+}

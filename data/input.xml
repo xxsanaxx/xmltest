@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ROOT>
+<root>
   <title>
     <name>名前</name>
-    <data>日程１</data>
-    <data>日程２</data>
-    <data>日程３</data>
-    <data>日程４</data>
+    <date>7/23(火)</date>
+    <date>7/25(木)</date>
+    <date>7/30(火)</date>
+    <date>8/1(木)</date>
   </title>
-  <resalt>
-    <name>田中</name>
-    <data>○</data>
-    <data>☓</data>
-    <data>○</data>
-    <data>○</data>
-  </resalt>
-  <resalt>
-    <name>森</name>
-    <data>○</data>
-    <data>☓</data>
-    <data>○</data>
-    <data>☓</data>
-  </resalt>
-</ROOT>
+  <result>
+    <name>ふくだ さとこ</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>たなか さなえ</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>こしお さなえ</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>XXX XXX</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>XXX XXX</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>XXX XXX</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>XXX XXX</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>XXX XXX</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>XXX XXX</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+  <result>
+    <name>XXX XXX</name>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+    <answer>-</answer>
+  </result>
+</root>
