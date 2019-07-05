@@ -1,6 +1,7 @@
 (function(){
   'use strict'
 
+	$('#test').text('test');
   // $.get('data/input.xml', function(xml){
   //   var title = $(this).find("title").find("name").text();
   //   alert(title);
