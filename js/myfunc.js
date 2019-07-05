@@ -8,22 +8,30 @@
 function makeTable(path){
 
   var xml = loadXML(path);
-  var tbl = $('#res');
+  var title = $('#title');
+  var results = $('#results');
   //----- 表を初期化する
-  tbl.empty();
+  title.empty();
+  results.empty();
   //----- タイトル行を作成
-  var title = $('<tr>')
-  tbl.append(title);
   $(xml).find("title *").each(function(i,val){
-    title.append('<td>'+$(val).text()+'</td>');
+    var cell = $('<div>').addClass('cell');
+    title.append(cell);
+    var p = $('<p>').text($(val).text());
+    cell.append(p);
   });
   //----- データを作成
   $(xml).find("ROOT result").each(function(i,val){
-    var data = $('<tr>').attr( 'id', "data" + i );
-    tbl.append(data);
+    var row = $('<div>').addClass('row');
+    results.append(row);
     $(val).find('*').each(function(j,val2){
-      data.append('<td>'+$(val2).text()+'</td>');
+      var cell = $('<div>').addClass('cell');
+      row.append(cell);
+      var p = $('<p>').text($(val2).text());
+      cell.append(p);
+    //  div.append('<td>'+$(val2).text()+'</td>');
     });
   });
 
 }
+
