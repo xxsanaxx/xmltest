@@ -29,7 +29,6 @@ function makeTable(path){
       row.append(cell);
       var p = $('<p>').text($(val2).text());
       cell.append(p);
-    //  div.append('<td>'+$(val2).text()+'</td>');
     });
   });
 
