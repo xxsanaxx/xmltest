@@ -1,7 +1,6 @@
 body{
   font-size: 30px;
   text-align: center;
-  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
 }
 
 #container{
@@ -33,7 +32,16 @@ body{
   border-radius: 20px;
   box-shadow: 5px 5px 10px gray;
 }
+#button.pressed{
+  box-shadow: 5px 0px 10px gray;
+  margin-top: 5px;
+}
+#button a {
+  font-weight: bold;
+  text-decoration:none;
+}
 #label{
+  color: #027;
   font-size: 40px;
   margin:10px;
 }
