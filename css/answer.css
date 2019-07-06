@@ -15,53 +15,62 @@ select{
 .a_rowbox{
   display:flex;
   flex-direction: row;
-  width:70%;
   border-bottom: 1px solid lightgray;
-  margin-left: 50px;
+  margin: 20px 50px;
 }
 .a_colbox{
+  background: linear-gradient(#ddd,#eee);
   border-radius: 50px;
-  margin: 20px;
-    text-align: left;
     margin: 10px;
-    width:2000px;
       display: flex;
       justify-content: center;
-        border:3px solid white;
+        flex-grow: 1;
+        //border:3px solid white;
+}
+.a_colbox:first-of-type{
+  background:white;
+  width:180px;
+  margin:10px 0px;
+  padding:5px 0px;
+  text-align: right;;
+}
+.a_answer{
+  padding:5px 20px;
 }
 .isSelected{
-  border:3px solid red;
-}
-a.a_answer{
-  text-decoration: none;
-  color:black;
+  //border:3px solid red;
+  background: linear-gradient(#8bf,#adf);
 }
 div{
   //border:1px solid black;
 }
 .hooter{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+
 }
-#button{
-  background: linear-gradient(#8bf,#bcf);
+.button{
+  background: linear-gradient(#75f,#97f);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 50px;
   box-shadow: 5px 5px 10px gray;
   margin: 40px;
+  padding: 0px 40px;
 }
-#button.pressed{
+.button.pressed{
   box-shadow: 5px 0px 10px gray;
   margin-top: 45px;
+  margin-bottom: 35px;
 }
-#button a {
+.button a {
   font-weight: bold;
   text-decoration:none;
 }
-#button #label{
-  color: #007;
+.button #label{
+  color: white;
   font-size: 30px;
+  font-weight: bold;
   margin:20px 40px;
 }

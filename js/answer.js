@@ -5,14 +5,25 @@
   makeNameSelect(xmlPath);
   makeAnswerTable(xmlPath);
 
-  $('#button').click(function(){
+  var  btn = $('#ok');
+  btn.click(function(){
     alert('登録します');
-    });
-    $('#button').mousedown(function(){
-      $('#button').addClass('pressed');
-    });
-    $('#button').mouseup(function(){
-      $('#button').removeClass('pressed');
-    });
+  });
+  btn.mousedown(function(){
+    btn.addClass('pressed');
+  });
+  btn.mouseup(function(){
+    btn.removeClass('pressed');
+  });
+  var cbtn = $('#cancel');
+  cbtn.click(function(){
+    alert('戻ります');
+  });
+  cbtn.mousedown(function(){
+    cbtn.addClass('pressed');
+  });
+  cbtn.mouseup(function(){
+    cbtn.removeClass('pressed');
+  });
 
 })();
